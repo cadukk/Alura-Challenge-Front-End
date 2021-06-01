@@ -1,0 +1,39 @@
+* {
+  background-color: #051D3B;
+}
+
+.header {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 343px;
+  height: 56px;
+  left: 16px;
+  top: 16px;
+}
+
+.header .logo {
+  /* position: absolute; */
+  display: flex;
+  width: 145px;
+  height: 34.05px;
+  left: 0;
+  /* flex-grow: 1; */
+}
+
+.header .lupa {
+  /* background-color: aquamarine; */
+  display: flex;
+  color: whitesmoke;
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 12px;
+}
+
+.header .menu-mobile {
+  /* background-color: red; */
+  display: flex;
+  color: whitesmoke;
+}
