@@ -1,0 +1,254 @@
+:root {
+  --color-background: #051D3B;
+  --code-color-background: #68D1FF;
+
+  --color-font: whitesmoke;
+  --color-icons: whitesmoke;
+}
+
+body {
+  width: 375px;
+  height: 1024px;
+  background: var(--color-background);
+}
+
+header {
+  /* position: absolute; */
+  display: flex;
+  width: 343px;
+  height: 56px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 145px;
+  margin-left: -15px;
+}
+
+.lupa {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 16px;
+  margin-left: 150px;
+  color: var(--color-icons);
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 16px;
+  margin-left: 16px;
+  font-size: 1.2rem;
+  color: var(--color-icons);
+}
+
+.editor_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: var(--code-color-background);
+  border-radius: 8px;
+
+  width: 343px;
+  height: 492px;
+  margin: 40px 16px auto 16px;
+  /* margin-top: 112px - topo - menu */
+}
+
+.texto_editor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 279px;
+  height: 428px;
+  margin-left: 32px;
+  margin-top: 32px;
+
+  background-color: #141414;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.mac_buttons {
+  /* background-color: pink; */
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  height: 12px;
+  margin-left: 18px;
+  margin-top: 18px;
+
+  /* flex: none; */
+  /* order: 0; */
+  /* flex-grow: 0; */
+  /* margin: 24px 8px; */
+}
+
+.editor {
+  display: flex;
+  align-items: center;
+
+  width: 247px;
+  height: 360px;
+  margin-left: 18px;
+  margin-top: 22px;
+  /* text-align: left; */
+  background-color: #141414;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 18px;
+  color: white;
+}
+
+
+.highlight_button {
+  /* display: flex; */
+  align-items: center;
+  margin: 32px 16px;
+  width: 343px;
+  height: 56px;
+  border-radius: 8px;
+
+  background-color: rgba(80, 129, 251, 0.08);
+  border: none;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 56px;
+  text-align: center;
+
+}
+
+.dados_projeto {
+  display: flex;
+  flex-direction: column;
+}
+
+.projeto_header {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: white;
+  width: 343px;
+  margin: 20px 229px 16px 16px;
+}
+
+.nome_projeto {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 343px;
+  height: 56px;
+  margin: auto;
+  color: white;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+
+}
+
+.nome_projeto::placeholder {
+  color: white;
+  margin: auto;
+  padding: 15px;
+
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+  opacity: 0.64;
+
+}
+
+.descricao_projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 343px;
+  height: 80px;
+  margin: 16px auto;
+  color: white;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.descricao_projeto::placeholder {
+  color: white;
+  margin: auto;
+  padding: 15px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+  opacity: 0.64;
+}
+
+.personaliza_projeto {
+  display: flex;
+  flex-direction: column;
+}
+
+.personaliza_header {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: white;
+  width: 343px;
+  margin: 20px 229px 16px 16px;
+}
+
+.linguagens_select {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 343px;
+  height: 56px;
+  margin: auto;
+  color: white;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  /* color: #687689; */
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.linguagens_select option {
+  background-color: #2d415b;
+  opacity: 0.16;
+}
