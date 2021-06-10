@@ -9,7 +9,7 @@
   <script src="https://kit.fontawesome.com/a72aa6adb2.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/comunidade.css">
   <title>AluraDev</title>
 </head>
 
@@ -28,39 +28,37 @@
       <img class="imagemMenuEditor" src="assets/img/editorDeCodigo.png" alt="Editor de código">
       <img class="imagemMenuComunidade" src="assets/img/Comunidade.png" alt="Comunidade">
     </div>
-    <div class="editorContainer">
-      <div class="blocoDeEdicao">
-        <div class="macButtons">
-          <i class="macBut1 fas fa-circle"></i>
-          <i class="macBut2 fas fa-circle"></i>
-          <i class="macBut3 fas fa-circle"></i>
-        </div>
-        <textarea class="textoEditor">
+    <div class="cardContent1">
+      <div class="editorContainer">
+        <div class="blocoDeEdicao">
+          <div class="macButtons">
+            <i class="macBut1 fas fa-circle"></i>
+            <i class="macBut2 fas fa-circle"></i>
+            <i class="macBut3 fas fa-circle"></i>
+          </div>
+          <textarea class="textoEditor">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat itaque culpa esse ipsam aperiam! Tempora ullam rem mollitia quidem ut minus id quaerat suscipit vel corporis, accusamus delectus unde!
         </textarea>
+        </div>
+      </div>
+      <div class="dadosProjeto">
+        <p class="tituloCardProjeto">Título do Projeto</p>
+        <p class="descricaoCardProjeto">Essa é a descrição do meu projeto.</p>
+      </div>
+      <div class="reactionComunidade">
+        <div class="comentReaction">
+          <i class="balaoComent fas fa-comment"></i>
+          <p class="textoBalaoComent">9</p>
+        </div>
+        <div class="heartReaction">
+          <i class="heartComent fas fa-heart"></i>
+          <p class="textoHeartComent">9</p>
+        </div>
+        <div class="spaceComunidade"></div>
+        <img class="authorComent" src="assets/img/authorcomunidade.png" alt="Author">
       </div>
     </div>
-    <button class="highlightButton">Visualizar com o highlight</button>
-    <div class="dadosProjeto">
-      <p class="projetoHeader">Seu Projeto</p>
-      <textarea class="nomeProjeto" placeholder="Nome do seu projeto"></textarea>
-      <textarea class="descricaoProjeto" placeholder="Descrição do seu projeto"></textarea>
-    </div>
-    <div class="personalizaProjeto">
-      <p class="personalizaProjetoHeader">Personalização</p>
 
-      <select name="linguagens" class="selectLinguagens">
-        <option value="Javascript">Javascript</option>
-        <option value="React">React</option>
-        <option value="Angular">Angular</option>
-        <option value="PHP">PHP</option>
-      </select>
-      <div class="seletorCorProjeto">
-        <button type="button" class="botaoPersonalizaCor"></button>
-      </div>
-      <button type="button" class="botaoSalvar">Salvar Projeto</button>
-
-    </div>
   </main>
 
 </body>
