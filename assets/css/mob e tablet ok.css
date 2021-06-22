@@ -472,6 +472,7 @@ option {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 704px;
     margin-left: 32px;
   }
@@ -512,16 +513,11 @@ option {
     margin-left: 32px;
   }
 
-  .header {
-    width: 1440px;
-    height: 1024px;
-    border-radius: 40px;
-  }
 
   .cabecalho {
+
     width: 1376px;
     height: 56px;
-    /* margin-left: 32px; */
     margin-top: 32px;
   }
 
@@ -580,22 +576,24 @@ option {
 
   .conteudoPrincipal {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    width: 1376px;
+    /* height: 56px; */
+    margin-top: 32px;
   }
 
   .barraMenu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 20vw;
-    height: 146px;
+    width: 344px;
+    /* height: 146px; */
     margin-left: 32px;
+    background-color: #ffBD2E;
   }
 
   .menuHeader {
-    display: flex;
-    flex-direction: row;
-    width: 250px;
+    /* width: 189px; */
     height: 18px;
     margin-left: 16px;
     margin-top: 40px;
@@ -607,10 +605,29 @@ option {
     text-transform: uppercase;
   }
 
+  .menuEditor {
+    display: flex;
+    /* width: auto; */
+    height: 48px;
+  }
+
   .imagemMenuEditor {
     width: 48px;
     height: 48px;
+    left: 0px;
+    top: 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
     margin: 0px 16px;
+    text-align: center;
+  }
+
+  .menuComunidade {
+    display: flex;
+    /* width: 189px; */
+    height: 48px;
+    margin-top: 16px;
   }
 
   .imagemMenuComunidade {
@@ -618,4 +635,101 @@ option {
     height: 48px;
     margin: 0px 16px;
   }
+
+  .menuTexto {
+    color: var(--color-font);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .conteudoCentral {
+    background-color: #27C93F;
+    width: 752px;
+  }
+
+  .editorContainer {
+    width: 752px;
+    height: 366px;
+    margin-top: 32px;
+  }
+
+  .blocoDeEdicao {
+    width: 688px;
+    height: 302px;
+    margin: 32px;
+  }
+
+  .macButtons {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .textoEditor {
+    width: 656px;
+    height: 270px;
+  }
+
+  .highlightButton {
+    width: 752px;
+    height: 56px;
+
+  }
+
+  .barraDireita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25vw;
+  }
+
+  .dadosProjeto {
+    width: 130px;
+  }
+
+  .projetoHeader {
+    width: 272px;
+    height: 18px;
+  }
+
+  .nomeProjeto {
+    width: 272px;
+    height: 56px;
+  }
+
+  .descricaoProjeto {
+    width: 272px;
+    height: 80px;
+  }
+
+  .personalizaProjetoHeader {
+    width: 272px;
+    height: 18px;
+  }
+
+  .personalizaProjeto {
+    width: 272px;
+    height: 56px;
+  }
+
+  .selectLinguagens {
+    width: 272px;
+    height: 56px;
+  }
+
+  .seletorCorProjeto {
+    width: 272px;
+    height: 56px;
+  }
+
+  .botaoPersonalizaCor {
+    width: 272px;
+    height: 56px;
+  }
+
+  .botaoSalvar {
+    width: 272px;
+    height: 56px;
+  }
+
 }

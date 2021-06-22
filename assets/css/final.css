@@ -1,0 +1,167 @@
+/*#region conf gerais*/
+:root {
+  --color-background: #051D3B;
+  --code-border-background: #68D1FF;
+  --code-text-background: #141414;
+  --button-background: rgba(80, 129, 251, 0.08);
+  --button-save-background: #5081FB;
+  --project-field-background: #1f344f;
+  --botao-seletor-cores: #6BD1FF;
+
+  --color-font: whitesmoke;
+  --color-font-secundary: #051D3B;
+  --color-icons: whitesmoke;
+
+  --color-macBut1: #ff5f56;
+  --color-macBut2: #ffBD2E;
+  --color-macBut3: #27C93F;
+}
+
+body {
+  width: 98vw;
+  height: 98vh;
+  background: var(--color-background);
+
+  border: 3px solid;
+  border-color: #27C93F;
+  border-radius: 24px;
+}
+
+/*#endregion conf gerais*/
+
+/* #region mobile first start */
+
+/*#region header mobile*/
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 56px;
+  margin: 16px;
+
+  background-color: #68D1FF;
+}
+
+.menuLogo {
+  width: 145px;
+}
+
+.menuBusca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--color-icons);
+  margin-left: 94px;
+  font-size: 1.3rem;
+}
+
+.barraBusca {
+  display: none;
+}
+
+.menuAuthor {
+  display: none;
+}
+
+.menuHamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--color-icons);
+  font-size: 1.3rem;
+}
+
+/*#endregion header mobile*/
+
+
+/* #endregion mobile first end*/
+
+@media (min-width:768px) {
+  body {
+    background: brown;
+  }
+
+  .cabecalho {
+    margin: 32px;
+    justify-content: space-between;
+  }
+
+  .menuLogo {
+    display: flex;
+  }
+
+  .menuBusca {
+    width: 431px;
+    margin-left: 40px;
+  }
+
+  .barraBusca {
+    display: flex;
+    width: 431px;
+    height: 56px;
+    padding: 0px 14px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: var(--project-field-background);
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-font);
+  }
+
+  .barraBusca::placeholder {
+    display: flex;
+    width: 98%;
+    padding: 16px 0px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-font);
+    opacity: 0.64;
+  }
+
+  .lupa {
+    display: none;
+  }
+
+  .menuHamburger {
+    margin-left: 40px;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width:1024px) {
+  body {
+    background: grey;
+  }
+
+  .cabecalho {}
+
+  .menuBusca {
+    display: flex;
+    width: 752px;
+  }
+
+  .barraBusca {
+    display: flex;
+    width: 100%;
+  }
+
+  .menuAuthor {
+    display: flex;
+    width: 106px;
+  }
+
+  .menuHamburger {
+    display: none;
+  }
+}
