@@ -31,7 +31,7 @@
     </div>
   </header>
   <main class="conteudoPrincipal">
-    <div class="barraMenu">
+    <div class="barraMenuLateral">
       <p class="menuHeader">Menu</p>
       <div class="menuEditor">
         <img class="imagemMenuEditor" src="assets/img/editor.svg" alt="Editor de código">
@@ -51,7 +51,17 @@
             <i class="macBut3 fas fa-circle"></i>
           </div>
           <textarea class="textoEditor">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat itaque culpa esse ipsam aperiam! Tempora ullam rem mollitia quidem ut minus id quaerat suscipit vel corporis, accusamus delectus unde!
+            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+            
+            const unfold = (f, seed) => {
+              const go = (f, seed, acc) => {
+                const res = f(seed)
+                return res ? go(f, res[1], acc.concat([res[0]])) : acc
+              }
+              return go(f, seed, [])
+            }
         </textarea>
         </div>
       </div>

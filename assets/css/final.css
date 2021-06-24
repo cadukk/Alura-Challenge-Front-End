@@ -78,6 +78,81 @@ body {
 
 /*#endregion header mobile*/
 
+/*#region editor mobile*/
+
+.barraMenuLateral {
+  display: none;
+}
+
+.conteudoCentral {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffBD2E;
+  height: 98vh;
+}
+
+.editorContainer {
+  display: flex;
+  /* width: 343px; */
+  height: 492px;
+  background-color: var(--code-border-background);
+  border-radius: 8px;
+  margin: 16px;
+  /* margin-top: 40px; */
+}
+
+.blocoDeEdicao {
+  display: flex;
+  flex-direction: column;
+  width: 279px;
+  height: auto;
+  margin: 32px;
+  background-color: var(--code-text-background);
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+}
+
+.macButtons {
+  display: flex;
+  justify-content: space-between;
+  width: 52px;
+  height: 12px;
+  font-size: 12px;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.macBut1 {
+  color: var(--color-macBut1);
+}
+
+.macBut2 {
+  color: var(--color-macBut2);
+}
+
+.macBut3 {
+  color: var(--color-macBut3);
+}
+
+.textoEditor {
+  /* width: 247px; */
+  height: 360px;
+  margin-top: 24px;
+  margin: 16px;
+  background-color: var(--code-text-background);
+  border: none;
+  resize: none;
+
+  font-family: 'Roboto Mono', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: justify;
+  color: var(--color-font);
+}
+
+/*#endregion editor mobile*/
 
 /* #endregion mobile first end*/
 
@@ -85,6 +160,8 @@ body {
   body {
     background: brown;
   }
+
+  /*#region header tablet*/
 
   .cabecalho {
     margin: 32px;
@@ -137,31 +214,166 @@ body {
     font-size: 1.5rem;
   }
 
+  /*#endregion header tablet*/
+
+  /*#region editor tablet*/
+
+  .editorContainer {
+    height: 366px;
+    margin: 32px;
+  }
+
+  .blocoDeEdicao {
+    width: 704px;
+  }
+
+
+  /*#endregion editor tablet*/
+
 }
 
-@media (min-width:1024px) {
+@media (min-width:1440px) {
+
+  /*1025px*/
   body {
     background: grey;
   }
 
-  .cabecalho {}
+  /*#region header pc*/
 
-  .menuBusca {
+  .cabecalho {
     display: flex;
-    width: 752px;
+    /* justify-content: center; */
+    width: 1376px;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* height: 56px; */
+    margin: 32px;
+    background-color: #68D1FF;
   }
 
-  .barraBusca {
-    display: flex;
-    width: 100%;
+  .menuLogo {
+    width: 312px;
+    margin-left: 16px;
+  }
+
+  .menuBusca {
+    width: 816px;
+    justify-content: center;
+    margin: 32px;
+
   }
 
   .menuAuthor {
     display: flex;
-    width: 106px;
+    width: 312px;
+    justify-content: flex-end;
+  }
+
+  .barraBusca {
+    display: flex;
+    width: 752px;
   }
 
   .menuHamburger {
     display: none;
+  }
+
+  /*#endregion header pc*/
+
+  /*#region blocos de conteudo pc*/
+
+  .conteudoPrincipal {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+  }
+
+  .barraMenuLateral {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    margin-left: 32px;
+
+    background-color: #27C93F;
+  }
+
+  .conteudoCentral {
+    /* margin-right: 40px; */
+    /* width: 816px; */
+    width: 752px;
+  }
+
+  .barraDireita {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    margin-right: 32px;
+    background-color: #141414;
+  }
+
+  /*#endregion blocos de conteudo pc*/
+
+
+
+  /*#region barra menu lateral pc*/
+
+
+  .menuHeader {
+    /* width: 189px; */
+    height: 18px;
+    margin-left: 16px;
+    color: var(--color-font);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+
+  .menuEditor {
+    display: flex;
+    justify-content: flex-start;
+    /* width: auto; */
+    height: 48px;
+  }
+
+  .imagemMenuEditor {
+    width: 48px;
+    margin-left: 16px;
+    margin: 0px 8px;
+  }
+
+  .menuComunidade {
+    display: flex;
+    justify-content: flex-start;
+    /* width: 189px; */
+    height: 48px;
+    margin-top: 16px;
+  }
+
+  .imagemMenuComunidade {
+    width: 48px;
+    margin: 0px 8px;
+  }
+
+  .menuTexto {
+    color: var(--color-font);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+  }
+
+  /*#endregion barra menu lateral pc*/
+
+  /*#region editor pc*/
+  .editorContainer {
+    width: 752px;
+    margin: 0px;
+  }
+
+  /*#endregion editor pc*/
+
+  .highlightButton {
+    /* display: none; */
   }
 }
