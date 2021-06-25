@@ -88,7 +88,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffBD2E;
-  height: 98vh;
 }
 
 .editorContainer {
@@ -153,6 +152,185 @@ body {
 }
 
 /*#endregion editor mobile*/
+
+/*#region highlightButton mobile*/
+.highlightButton {
+  align-items: center;
+  margin: 32px 16px;
+  width: 343px;
+  height: 56px;
+  border-radius: 8px;
+
+  background-color: var(--button-background);
+  border: none;
+  color: var(--color-font);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/*#endregion highlightButton mobile*/
+
+/*#region barraDireita mobile */
+.dadosProjeto {
+  display: flex;
+  flex-direction: column;
+}
+
+.projetoHeader {
+  width: 343px;
+  height: 18px;
+  margin-left: 16px;
+  margin-top: 40px;
+  color: var(--color-font);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.nomeProjeto {
+  width: 343px;
+  height: 56px;
+  margin: 16px auto;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--project-field-background);
+  resize: none;
+}
+
+.nomeProjeto::placeholder {
+  margin: auto;
+  color: var(--color-font);
+  opacity: 64%;
+  padding: 15px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.descricaoProjeto {
+  width: 343px;
+  height: 80px;
+  margin: 16px auto;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--project-field-background);
+  resize: none;
+}
+
+.descricaoProjeto::placeholder {
+  margin: auto;
+  color: var(--color-font);
+  opacity: 64%;
+  padding: 15px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.personalizaProjeto {
+  display: flex;
+  flex-direction: column;
+}
+
+.personalizaProjetoHeader {
+  width: 343px;
+  height: 18px;
+  margin-left: 16px;
+  margin-top: 40px;
+  color: var(--color-font);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.selectLinguagens {
+  width: 343px;
+  height: 56px;
+  margin: 16px auto;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--project-field-background);
+}
+
+
+select {
+  margin: auto;
+  color: var(--color-font);
+  opacity: 64%;
+  padding: 15px;
+  box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* opacity: 0.16; */
+}
+
+option {
+  margin: auto;
+  box-sizing: border-box;
+  color: var(--color-font);
+  opacity: 64%;
+  background-color: var(--project-field-background);
+  border-radius: 8px;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.seletorCorProjeto {
+  width: 343px;
+  height: 56px;
+  margin: 16px auto;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  /* background-color: var(--project-field-background); */
+}
+
+.botaoPersonalizaCor {
+  width: 327px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 4px;
+  background-color: var(--botao-seletor-cores);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botaoSalvar {
+  /* display: flex; */
+  align-items: center;
+  margin: 40px 16px;
+  width: 343px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+
+  background-color: var(--button-save-background);
+  color: var(--color-font-secundary);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/*#endregion barraDireita mobile */
 
 /* #endregion mobile first end*/
 
@@ -229,6 +407,61 @@ body {
 
 
   /*#endregion editor tablet*/
+
+  /*#region highlightButton tablet*/
+  .highlightButton {
+    display: flex;
+    /* align-self: center; */
+    justify-content: center;
+    margin: 32px;
+    width: auto;
+    height: 56px;
+  }
+
+  /*#endregion highlightButton tablet*/
+
+  /*#region barraDireita tablet */
+
+  .nomeProjeto {
+    width: 704px;
+    margin: auto;
+  }
+
+  .descricaoProjeto {
+    width: 704px;
+    margin-top: 16px;
+  }
+
+  .personalizaProjeto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .personalizaProjetoHeader {
+    margin-bottom: 0px;
+  }
+
+  .selectLinguagens {
+    width: 344px;
+    margin: 16px auto;
+  }
+
+  .seletorCorProjeto {
+    width: 344px;
+    margin: 16px auto;
+  }
+
+  .botaoPersonalizaCor {
+    width: 328px;
+  }
+
+  .botaoSalvar {
+    width: 704px;
+    margin-top: 32px;
+  }
+
+  /*#endregion barraDireita tablet */
 
 }
 
@@ -308,13 +541,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 312px;
-    margin-right: 32px;
+    /* margin-right: 32px; */
     background-color: #141414;
   }
 
   /*#endregion blocos de conteudo pc*/
-
-
 
   /*#region barra menu lateral pc*/
 
@@ -373,7 +604,59 @@ body {
 
   /*#endregion editor pc*/
 
+  /*#region highlightButton pc*/
   .highlightButton {
-    /* display: none; */
+    margin: 32px 0px;
+    width: 752px;
+    background-color: #ff5f56;
+
   }
+
+  /*#endregion highlightButton pc*/
+
+  /*COMECAR A AJUSTAR AQUI
+  /*#region barraDireita pc */
+
+  .nomeProjeto {
+    width: 704px;
+    margin: auto;
+  }
+
+  .descricaoProjeto {
+    width: 704px;
+    margin-top: 16px;
+  }
+
+  .personalizaProjeto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .personalizaProjetoHeader {
+    margin-bottom: 0px;
+  }
+
+  .selectLinguagens {
+    width: 344px;
+    margin: 16px auto;
+  }
+
+  .seletorCorProjeto {
+    width: 344px;
+    margin: 16px auto;
+  }
+
+  .botaoPersonalizaCor {
+    width: 328px;
+  }
+
+  .botaoSalvar {
+    width: 704px;
+    margin-top: 32px;
+  }
+
+  /*#endregion barraDireita pc */
+
+
 }
