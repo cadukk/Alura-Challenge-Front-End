@@ -8,9 +8,9 @@
   <script src="https://kit.fontawesome.com/a72aa6adb2.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
   <link rel="stylesheet" href="./assets/css/normalize.css">
-  <link rel="stylesheet" href="./assets/css/final.css">
+  <link rel="stylesheet" href="./assets/css/darcula.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>AluraDev</title>
 </head>
 
@@ -43,26 +43,16 @@
       </div>
     </div>
     <div class="conteudoCentral">
-      <div class="editorContainer">
+      <div class="editorContainer" id="editorContainerID">
         <div class="blocoDeEdicao">
           <div class="macButtons">
             <i class="macBut1 fas fa-circle"></i>
             <i class="macBut2 fas fa-circle"></i>
             <i class="macBut3 fas fa-circle"></i>
           </div>
-          <textarea class="textoEditor">
-            const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
-
-            const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-            
-            const unfold = (f, seed) => {
-              const go = (f, seed, acc) => {
-                const res = f(seed)
-                return res ? go(f, res[1], acc.concat([res[0]])) : acc
-              }
-              return go(f, seed, [])
-            }
-        </textarea>
+          <div class="textoEditor">
+            <pre><code class="preview hljs" contenteditable="true" aria-label="editor"></code></pre>
+          </div>
         </div>
       </div>
       <button class="highlightButton">Visualizar com o highlight</button>
@@ -77,18 +67,22 @@
       <div class="personalizaProjeto">
         <select name="linguagens" class="selectLinguagens">
           <option value="Javascript">Javascript</option>
-          <option value="React">React</option>
-          <option value="Angular">Angular</option>
+          <option value="Css">React</option>
+          <option value="Html">HTML</option>Angular</option>
           <option value="PHP">PHP</option>
         </select>
         <div class="seletorCorProjeto">
-          <button type="button" class="botaoPersonalizaCor"></button>
+          <input type="color" id="corDaBorda" class="botaoPersonalizaCor" value="#68D1FF"></button>
         </div>
       </div>
       <button type="button" class="botaoSalvar">Salvar Projeto</button>
     </div>
     </div>
   </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script src="assets/js/codehighlight.js"></script>
+  <script src="assets/js/colorbutton.js"></script>
 
 </body>
 

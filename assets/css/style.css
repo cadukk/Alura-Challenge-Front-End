@@ -21,10 +21,6 @@ body {
   width: 98vw;
   height: 98vh;
   background: var(--color-background);
-
-  border: 3px solid;
-  border-color: #27C93F;
-  border-radius: 24px;
 }
 
 /*#endregion conf gerais*/
@@ -39,8 +35,6 @@ body {
   align-items: center;
   height: 56px;
   margin: 16px;
-
-  background-color: #68D1FF;
 }
 
 .menuLogo {
@@ -87,7 +81,6 @@ body {
 .conteudoCentral {
   display: flex;
   flex-direction: column;
-  background-color: #ffBD2E;
 }
 
 .editorContainer {
@@ -98,6 +91,10 @@ body {
   border-radius: 8px;
   margin: 16px;
   /* margin-top: 40px; */
+}
+
+.preview {
+  background-color: transparent;
 }
 
 .blocoDeEdicao {
@@ -199,6 +196,15 @@ body {
   border-radius: 8px;
   background-color: var(--project-field-background);
   resize: none;
+
+  color: var(--color-font);
+  opacity: 64%;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .nomeProjeto::placeholder {
@@ -222,6 +228,16 @@ body {
   border-radius: 8px;
   background-color: var(--project-field-background);
   resize: none;
+
+  margin: auto;
+  color: var(--color-font);
+  opacity: 64%;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .descricaoProjeto::placeholder {
@@ -295,6 +311,7 @@ option {
 }
 
 .seletorCorProjeto {
+  display: flex;
   width: 343px;
   height: 56px;
   margin: 16px auto;
@@ -307,10 +324,11 @@ option {
 .botaoPersonalizaCor {
   width: 327px;
   height: 40px;
-  margin: 8px;
+  margin: auto;
   border-radius: 4px;
-  background-color: var(--botao-seletor-cores);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  background-color: transparent;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .botaoSalvar {
@@ -335,9 +353,7 @@ option {
 /* #endregion mobile first end*/
 
 @media (min-width:768px) {
-  body {
-    background: brown;
-  }
+  body {}
 
   /*#region header tablet*/
 
@@ -413,7 +429,8 @@ option {
     display: flex;
     /* align-self: center; */
     justify-content: center;
-    margin: 32px;
+    margin-left: 32px;
+    margin-top: 0px;
     width: auto;
     height: 56px;
   }
@@ -421,6 +438,9 @@ option {
   /*#endregion highlightButton tablet*/
 
   /*#region barraDireita tablet */
+  .projetoHeader {
+    margin-top: 0px;
+  }
 
   .nomeProjeto {
     width: 704px;
@@ -465,12 +485,10 @@ option {
 
 }
 
-@media (min-width:1440px) {
+@media (min-width:1025px) {
 
   /*1025px*/
-  body {
-    background: grey;
-  }
+  body {}
 
   /*#region header pc*/
 
@@ -482,7 +500,6 @@ option {
     /* align-items: center; */
     /* height: 56px; */
     margin: 32px;
-    background-color: #68D1FF;
   }
 
   .menuLogo {
@@ -491,9 +508,9 @@ option {
   }
 
   .menuBusca {
-    width: 816px;
-    justify-content: center;
-    margin: 32px;
+    width: 752px;
+    margin-left: 16px;
+    margin-right: 32px;
 
   }
 
@@ -527,8 +544,6 @@ option {
     flex-direction: column;
     width: 312px;
     margin-left: 32px;
-
-    background-color: #27C93F;
   }
 
   .conteudoCentral {
@@ -541,8 +556,7 @@ option {
     display: flex;
     flex-direction: column;
     width: 312px;
-    /* margin-right: 32px; */
-    background-color: #141414;
+    margin-left: 32px;
   }
 
   /*#endregion blocos de conteudo pc*/
@@ -553,7 +567,8 @@ option {
   .menuHeader {
     /* width: 189px; */
     height: 18px;
-    margin-left: 16px;
+    margin-left: 8px;
+    margin-top: 0px;
     color: var(--color-font);
     font-family: 'Inter', sans-serif;
     font-size: 12px;
@@ -592,6 +607,7 @@ option {
     color: var(--color-font);
     font-family: 'Inter', sans-serif;
     font-size: 0.9rem;
+    opacity: 0.64;
   }
 
   /*#endregion barra menu lateral pc*/
@@ -608,51 +624,63 @@ option {
   .highlightButton {
     margin: 32px 0px;
     width: 752px;
-    background-color: #ff5f56;
-
   }
 
   /*#endregion highlightButton pc*/
 
-  /*COMECAR A AJUSTAR AQUI
   /*#region barraDireita pc */
 
+  .barraDireita {}
+
+  .dadosProjeto {}
+
+  .projetoHeader {
+    width: 272px;
+    margin-left: 16px;
+    margin-top: 0px;
+  }
+
   .nomeProjeto {
-    width: 704px;
-    margin: auto;
+    width: 272px;
+    margin-left: 16px;
   }
 
   .descricaoProjeto {
-    width: 704px;
+    width: 272px;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  .personalizaProjetoHeader {
+    width: 272px;
+    margin-bottom: 0px;
     margin-top: 16px;
   }
 
   .personalizaProjeto {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .personalizaProjetoHeader {
-    margin-bottom: 0px;
+    flex-direction: column;
   }
 
   .selectLinguagens {
-    width: 344px;
-    margin: 16px auto;
+    width: 272px;
+    margin-left: 16px;
+    margin-bottom: 8px;
   }
 
   .seletorCorProjeto {
-    width: 344px;
-    margin: 16px auto;
+    width: 272px;
+    margin-left: 16px;
+    margin-top: 8px;
   }
 
   .botaoPersonalizaCor {
-    width: 328px;
+    width: 256px;
   }
 
   .botaoSalvar {
-    width: 704px;
+    width: 272px;
     margin-top: 32px;
   }
 
