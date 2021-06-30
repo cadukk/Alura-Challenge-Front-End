@@ -27,7 +27,8 @@
       <img class="author" src="assets/img/author.png" alt="Author">
     </div>
     <div class="menuHamburger">
-      <i class="hamburger fas fa-bars"></i>
+      <i class="fas fa-bars" id="hamburgerOpen"></i>
+      <i class="fas fa-times" id="hamburgerClose"></i>
     </div>
   </header>
   <main class="conteudoPrincipal">
@@ -37,9 +38,18 @@
         <img class="imagemMenuEditor" src="assets/img/editor.svg" alt="Editor de código">
         <p class="menuTexto">Editor de Código</p>
       </div>
-      <div class="menuComunidade">
-        <img class="imagemMenuComunidade" src="assets/img/comunidade.svg" alt="Comunidade">
-        <p class="menuTexto">Comunidade</p>
+      <button class="menuComunidadeLink">
+        <a href="comunidade.html">
+          <div class="menuComunidade">
+            <img class="imagemMenuComunidade" src="assets/img/comunidade.svg" alt="Comunidade">
+            <p class="menuTexto">Comunidade</p>
+          </div>
+        </a>
+      </button>
+      <div class="lineMobile">
+      </div>
+      <div class="authorMobile">
+        <img class="author" src="assets/img/author.png" alt="Author">
       </div>
     </div>
     <div class="conteudoCentral">
@@ -55,13 +65,14 @@
           </div>
         </div>
       </div>
-      <button class="highlightButton">Visualizar com o highlight</button>
+      <button class="highlightButton botaoOutlined">Visualizar com o highlight</button>
     </div>
     <div class="barraDireita">
       <div class="dadosProjeto">
+        <!-- transformar em label -->
         <p class="projetoHeader">Seu Projeto</p>
-        <textarea class="nomeProjeto" placeholder="Nome do seu projeto"></textarea>
-        <textarea class="descricaoProjeto" placeholder="Descrição do seu projeto"></textarea>
+        <input type="text" class="nomeProjeto .inputTexto" placeholder="Nome do seu projeto"></input>
+        <input type="text" class="descricaoProjeto .inputTexto" placeholder="Descrição do seu projeto"></input>
       </div>
       <p class="personalizaProjetoHeader">Personalização</p>
       <div class="personalizaProjeto">
@@ -75,7 +86,7 @@
           <input type="color" id="corDaBorda" class="botaoPersonalizaCor" value="#68D1FF"></button>
         </div>
       </div>
-      <button type="button" class="botaoSalvar">Salvar Projeto</button>
+      <button type="button" class="botaoSalvar botaoFilled">Salvar Projeto</button>
     </div>
     </div>
   </main>
@@ -83,6 +94,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
   <script src="assets/js/codehighlight.js"></script>
   <script src="assets/js/colorbutton.js"></script>
+  <script src="assets/js/menumobile.js"></script>
 
 </body>
 

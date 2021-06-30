@@ -1,5 +1,3 @@
-console.log('oi, vamos começar?')
-
 // function trocaCor(color) {
 // document.getElementById("editorContainerID").style.backgroundColor = color;
 // }
