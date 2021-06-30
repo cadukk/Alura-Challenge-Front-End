@@ -157,7 +157,7 @@ body {
   padding: 10px;
 
   transform: translateX(9999px);
-  transition: transform 0.8s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .abreMenuLateral {
