@@ -104,6 +104,36 @@ body {
 }
 
 .barraBusca {
+  display: block;
+  width: 150px;
+  margin-top: 75px;
+  margin-right: 1px;
+  height: 26px;
+  padding: 0px 14px;
+  border: none;
+  border-radius: 8px;
+
+  background-color: var(--project-field-background);
+
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-font);
+}
+
+.barraBusca::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-font);
+  opacity: 0.64;
+}
+
+#buscaOpen {
+  display: flex;
+}
+
+#buscaClose {
   display: none;
 }
 
@@ -157,7 +187,7 @@ body {
   padding: 10px;
 
   transform: translateX(9999px);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .abreMenuLateral {
