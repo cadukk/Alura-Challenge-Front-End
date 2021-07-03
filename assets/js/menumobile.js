@@ -23,19 +23,18 @@ const $btnBuscaOpen = document.querySelector('#buscaOpen')
 const $btnBuscaClose = document.querySelector('#buscaClose')
 
 $btnBuscaOpen.addEventListener('click', function () {
-  document.getElementById('buscaOpen').style.display = "none"
-  document.getElementById('buscaClose').style.display = "flex"
-  document.getElementById('buscaClose').style.marginRight = "155px"
-  document.getElementById('barraDeBusca').style.display = "block"
-
-  // document.getElementById('barraDeBusca').style.display = "flex"
+  if (screen.width < 400) {
+    document.getElementById('buscaOpen').style.display = "none"
+    document.getElementById('buscaClose').style.display = "flex"
+    document.getElementById('buscaClose').style.marginRight = "155px"
+    document.getElementById('barraDeBusca').style.display = "block"
+  }
 })
 $btnBuscaClose.addEventListener('click', function () {
-
-  document.getElementById('buscaClose').style.display = "none"
-  document.getElementById('buscaOpen').style.display = "flex"
-  document.getElementById('barraDeBusca').style.display = "none"
-
+  if (screen.width < 400) {
+    document.getElementById('buscaClose').style.display = "none"
+    document.getElementById('buscaOpen').style.display = "flex"
+    document.getElementById('barraDeBusca').style.display = "none"
+  }
 })
-$btnBuscaOpen.addEventListener('click', function () {
-})
+
